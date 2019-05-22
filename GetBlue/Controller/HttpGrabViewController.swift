@@ -12,7 +12,7 @@ import AVFoundation
 var pullTimer: Timer?
 var backgroundTaskIdentifier: UIBackgroundTaskIdentifier?
 
-class HttpGrabViewController : MyBaseViewController
+class HttpGrabViewController : MyBaseViewController, UIGestureRecognizerDelegate
 {
     
     @IBOutlet weak var startButton: UIButton!
@@ -108,6 +108,33 @@ class HttpGrabViewController : MyBaseViewController
         backgroundTaskIdentifier = UIApplication.shared.beginBackgroundTask(expirationHandler: {
             UIApplication.shared.endBackgroundTask(backgroundTaskIdentifier!)
         })
+        
+        textLabel.isEditable = false
+        textLabel.isSelectable = false
+        
+        let doubleTap = UITapGestureRecognizer()
+        doubleTap.delegate = self
+        doubleTap.numberOfTouchesRequired = 2
+        doubleTap.addTarget(self, action: #selector(doubleTapped))
+        view.isUserInteractionEnabled = true
+        view.addGestureRecognizer(doubleTap)
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        NSLog("3333333333")
+        return true
+    }
+    
+    @objc func onLongPress(gestureRecognizer:UIGestureRecognizer){
+        NSLog("go back @@@@@@@")
+        if gestureRecognizer.state == UIGestureRecognizer.State.began {
+            NSLog("long press detected")
+        }
+    }
+    
+    @objc func doubleTapped() {
+        // do something here
+        NSLog("go back ~~~~~~~~~~~~~")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
