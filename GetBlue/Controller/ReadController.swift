@@ -12,16 +12,30 @@ import WebKit
 class ReadController : MyBaseViewController, WKNavigationDelegate, UIGestureRecognizerDelegate {
     var webView: WKWebView!
     var currentPage : Int = 1
+    var pageKeyName : String = "currentPage"
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         NSLog("done loading");
         
-        let js = "document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust='200%'"
+        let js = "document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust='300%'"
         
         webView.evaluateJavaScript(js, completionHandler: nil)
         
         webView.scrollView.pinchGestureRecognizer?.isEnabled = false
+    }
+    
+    func savePageSetting() {
+        let defaults = UserDefaults.standard
+        defaults.set(currentPage, forKey: pageKeyName)
+    }
+    
+    func loadPageSetting() {
+        let defaults = UserDefaults.standard
+        currentPage = defaults.integer(forKey: pageKeyName)
+        if (currentPage == 0) {
+            currentPage = 1
+        }
     }
     
     override func loadView() {
@@ -30,7 +44,11 @@ class ReadController : MyBaseViewController, WKNavigationDelegate, UIGestureReco
         webView.navigationDelegate = self
         view = webView
         
-        loadCurrentPage()
+        loadPageSetting()
+        
+        if (loadCurrentPage() == false) {
+            
+        }
         
         webView.allowsBackForwardNavigationGestures = true
         webView.isUserInteractionEnabled = true
@@ -107,6 +125,7 @@ class ReadController : MyBaseViewController, WKNavigationDelegate, UIGestureReco
         
         webView.loadFileURL(url!, allowingReadAccessTo:
             Bundle.main.resourceURL!.appendingPathComponent("pvtc"))
+        savePageSetting()
         return true
     }
     
