@@ -7,18 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7503451D2292DC3400CF7307 /* 8.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345132292DC3300CF7307 /* 8.html */; };
-		7503451E2292DC3400CF7307 /* 10.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345142292DC3300CF7307 /* 10.html */; };
-		7503451F2292DC3400CF7307 /* 2.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345152292DC3300CF7307 /* 2.html */; };
-		750345202292DC3400CF7307 /* 9.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345162292DC3300CF7307 /* 9.html */; };
-		750345212292DC3400CF7307 /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345172292DC3400CF7307 /* 1.html */; };
-		750345222292DC3400CF7307 /* 4.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345182292DC3400CF7307 /* 4.html */; };
-		750345232292DC3400CF7307 /* 3.html in Resources */ = {isa = PBXBuildFile; fileRef = 750345192292DC3400CF7307 /* 3.html */; };
-		750345242292DC3400CF7307 /* 6.html in Resources */ = {isa = PBXBuildFile; fileRef = 7503451A2292DC3400CF7307 /* 6.html */; };
-		750345252292DC3400CF7307 /* 5.html in Resources */ = {isa = PBXBuildFile; fileRef = 7503451B2292DC3400CF7307 /* 5.html */; };
-		750345262292DC3400CF7307 /* 7.html in Resources */ = {isa = PBXBuildFile; fileRef = 7503451C2292DC3400CF7307 /* 7.html */; };
-		7511C554228FA54700B28708 /* 001.html in Resources */ = {isa = PBXBuildFile; fileRef = 7511C553228FA54700B28708 /* 001.html */; };
 		75383C97228AE57E00DEE5D6 /* 5s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75383C96228AE57E00DEE5D6 /* 5s.mp3 */; };
+		757BC56922FFB4E5007DAEBF /* Game24ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BC56822FFB4E5007DAEBF /* Game24ViewController.swift */; };
 		759C21B7224E5A4100197EF4 /* HttpGrabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C21B6224E5A4100197EF4 /* HttpGrabViewController.swift */; };
 		75B29D08229005B40093CCE6 /* ReadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B29D07229005B40093CCE6 /* ReadController.swift */; };
 		75B7054622688538004E420F /* MyBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7054522688538004E420F /* MyBaseViewController.swift */; };
@@ -51,18 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		750345132292DC3300CF7307 /* 8.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 8.html; sourceTree = "<group>"; };
-		750345142292DC3300CF7307 /* 10.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 10.html; sourceTree = "<group>"; };
-		750345152292DC3300CF7307 /* 2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 2.html; sourceTree = "<group>"; };
-		750345162292DC3300CF7307 /* 9.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 9.html; sourceTree = "<group>"; };
-		750345172292DC3400CF7307 /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
-		750345182292DC3400CF7307 /* 4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 4.html; sourceTree = "<group>"; };
-		750345192292DC3400CF7307 /* 3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 3.html; sourceTree = "<group>"; };
-		7503451A2292DC3400CF7307 /* 6.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 6.html; sourceTree = "<group>"; };
-		7503451B2292DC3400CF7307 /* 5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 5.html; sourceTree = "<group>"; };
-		7503451C2292DC3400CF7307 /* 7.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 7.html; sourceTree = "<group>"; };
-		7511C553228FA54700B28708 /* 001.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 001.html; sourceTree = "<group>"; };
 		75383C96228AE57E00DEE5D6 /* 5s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5s.mp3; sourceTree = "<group>"; };
+		757BC56822FFB4E5007DAEBF /* Game24ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game24ViewController.swift; sourceTree = "<group>"; };
 		759C21B6224E5A4100197EF4 /* HttpGrabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGrabViewController.swift; sourceTree = "<group>"; };
 		75B29D07229005B40093CCE6 /* ReadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadController.swift; sourceTree = "<group>"; };
 		75B7054522688538004E420F /* MyBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBaseViewController.swift; sourceTree = "<group>"; };
@@ -111,17 +91,6 @@
 		7511C552228FA4CF00B28708 /* res */ = {
 			isa = PBXGroup;
 			children = (
-				750345172292DC3400CF7307 /* 1.html */,
-				750345152292DC3300CF7307 /* 2.html */,
-				750345192292DC3400CF7307 /* 3.html */,
-				750345182292DC3400CF7307 /* 4.html */,
-				7503451B2292DC3400CF7307 /* 5.html */,
-				7503451A2292DC3400CF7307 /* 6.html */,
-				7503451C2292DC3400CF7307 /* 7.html */,
-				750345132292DC3300CF7307 /* 8.html */,
-				750345162292DC3300CF7307 /* 9.html */,
-				750345142292DC3300CF7307 /* 10.html */,
-				7511C553228FA54700B28708 /* 001.html */,
 			);
 			path = res;
 			sourceTree = "<group>";
@@ -142,6 +111,7 @@
 				759C21B6224E5A4100197EF4 /* HttpGrabViewController.swift */,
 				75ECAA2A226B3C4A00F762A0 /* GrabListController.swift */,
 				75B29D07229005B40093CCE6 /* ReadController.swift */,
+				757BC56822FFB4E5007DAEBF /* Game24ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -309,21 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750345242292DC3400CF7307 /* 6.html in Resources */,
-				750345232292DC3400CF7307 /* 3.html in Resources */,
-				750345212292DC3400CF7307 /* 1.html in Resources */,
 				75383C97228AE57E00DEE5D6 /* 5s.mp3 in Resources */,
-				750345222292DC3400CF7307 /* 4.html in Resources */,
 				75F1B2542245113900610496 /* LaunchScreen.storyboard in Resources */,
-				7503451E2292DC3400CF7307 /* 10.html in Resources */,
-				7503451F2292DC3400CF7307 /* 2.html in Resources */,
 				75F1B2512245113900610496 /* Assets.xcassets in Resources */,
-				7511C554228FA54700B28708 /* 001.html in Resources */,
-				750345262292DC3400CF7307 /* 7.html in Resources */,
-				750345252292DC3400CF7307 /* 5.html in Resources */,
-				750345202292DC3400CF7307 /* 9.html in Resources */,
 				75F1B24F2245113700610496 /* Main.storyboard in Resources */,
-				7503451D2292DC3400CF7307 /* 8.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +311,7 @@
 				75B7054622688538004E420F /* MyBaseViewController.swift in Sources */,
 				75ECAA2B226B3C4A00F762A0 /* GrabListController.swift in Sources */,
 				75F1B24C2245113700610496 /* MainViewController.swift in Sources */,
+				757BC56922FFB4E5007DAEBF /* Game24ViewController.swift in Sources */,
 				75F1B24A2245113700610496 /* AppDelegate.swift in Sources */,
 				75B29D08229005B40093CCE6 /* ReadController.swift in Sources */,
 				75C7D1D922732D980050B93B /* GrabUrlHolder.swift in Sources */,

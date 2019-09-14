@@ -52,10 +52,12 @@ class ReadController : MyBaseViewController, WKNavigationDelegate, UIGestureReco
         
         webView.allowsBackForwardNavigationGestures = true
         webView.isUserInteractionEnabled = true
+        webView.scrollView.isScrollEnabled = true
+        webView.scrollView.bounces = false
       
         let longPressRecognizer = UILongPressGestureRecognizer()
         longPressRecognizer.delegate = self
-        longPressRecognizer.addTarget(self, action: #selector(onLongPress(gestureRecognizer:)))
+        longPressRecognizer.addTarget(self, action: #selector(gestureRecognizer))
         self.webView!.scrollView.addGestureRecognizer(longPressRecognizer)
         
         let swipeRecongizer = UISwipeGestureRecognizer()
@@ -73,7 +75,7 @@ class ReadController : MyBaseViewController, WKNavigationDelegate, UIGestureReco
         super.viewDidLoad()
     }
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    @objc func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         NSLog("3333333333")
         return true
     }

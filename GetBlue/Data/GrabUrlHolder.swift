@@ -16,23 +16,14 @@ class GrabUrlHolder
     
     public static func loadUrl() {
         if (nameList.count == 0) {
-            //allTargetUrl["程悦"] = "http://sbj.speiyou.com/classes/view/ff80808166f38a05016706d1f81d1a11"
-            //allTargetUrl["姜付加"] = "http://sbj.speiyou.com/classes/view/ff8080816705ca02016706c500b6756d"
+            nameList.append("崔梦迪秋季")
+            addressList.append("http://sbj.speiyou.com/classes/view/a5e086f0474b4216b8e40201671f4582")
             
-            nameList.append("崔梦迪一期上午")
-            addressList.append("http://sbj.speiyou.com/classes/view/72ac93f820154370ab17c04d0c48b4ad")
+            nameList.append("崔梦迪秋季A")
+            addressList.append("http://sbj.speiyou.com/classes/view/f908cfdc391b40538c97f7c17caa1ee8")
             
-            nameList.append("周王莹零期下午")
-            addressList.append("http://sbj.speiyou.com/classes/view/a9613ed160854a77b776b69149bc2169")
-            
-            nameList.append("程硕零期下午")
-            addressList.append("http://sbj.speiyou.com/classes/view/16cb9e8f86584c3f99670947e94599e3")
         }
     }
-    
-    /*public static func getUrl() -> [String:String]{
-        return GrabUrlHolder.allTargetUrl;
-    }*/
     
     public static func getUrlCount() -> Int {
         return nameList.count
