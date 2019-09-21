@@ -13,6 +13,8 @@
 		75B29D08229005B40093CCE6 /* ReadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B29D07229005B40093CCE6 /* ReadController.swift */; };
 		75B7054622688538004E420F /* MyBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7054522688538004E420F /* MyBaseViewController.swift */; };
 		75C7D1D922732D980050B93B /* GrabUrlHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C7D1D822732D980050B93B /* GrabUrlHolder.swift */; };
+		75E60A932335B5A400D0CFBB /* TimeCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E60A922335B5A400D0CFBB /* TimeCounterViewController.swift */; };
+		75E60A952335B7C300D0CFBB /* TimerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E60A942335B7C300D0CFBB /* TimerPickerViewController.swift */; };
 		75ECAA2B226B3C4A00F762A0 /* GrabListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECAA2A226B3C4A00F762A0 /* GrabListController.swift */; };
 		75F1B24A2245113700610496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F1B2492245113700610496 /* AppDelegate.swift */; };
 		75F1B24C2245113700610496 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F1B24B2245113700610496 /* MainViewController.swift */; };
@@ -47,6 +49,8 @@
 		75B29D07229005B40093CCE6 /* ReadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadController.swift; sourceTree = "<group>"; };
 		75B7054522688538004E420F /* MyBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBaseViewController.swift; sourceTree = "<group>"; };
 		75C7D1D822732D980050B93B /* GrabUrlHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabUrlHolder.swift; sourceTree = "<group>"; };
+		75E60A922335B5A400D0CFBB /* TimeCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounterViewController.swift; sourceTree = "<group>"; };
+		75E60A942335B7C300D0CFBB /* TimerPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerViewController.swift; sourceTree = "<group>"; };
 		75ECAA2A226B3C4A00F762A0 /* GrabListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabListController.swift; sourceTree = "<group>"; };
 		75F1B2462245113700610496 /* GetBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetBlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F1B2492245113700610496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				75ECAA2A226B3C4A00F762A0 /* GrabListController.swift */,
 				75B29D07229005B40093CCE6 /* ReadController.swift */,
 				757BC56822FFB4E5007DAEBF /* Game24ViewController.swift */,
+				75E60A922335B5A400D0CFBB /* TimeCounterViewController.swift */,
+				75E60A942335B7C300D0CFBB /* TimerPickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E60A952335B7C300D0CFBB /* TimerPickerViewController.swift in Sources */,
 				759C21B7224E5A4100197EF4 /* HttpGrabViewController.swift in Sources */,
 				75B7054622688538004E420F /* MyBaseViewController.swift in Sources */,
+				75E60A932335B5A400D0CFBB /* TimeCounterViewController.swift in Sources */,
 				75ECAA2B226B3C4A00F762A0 /* GrabListController.swift in Sources */,
 				75F1B24C2245113700610496 /* MainViewController.swift in Sources */,
 				757BC56922FFB4E5007DAEBF /* Game24ViewController.swift in Sources */,
