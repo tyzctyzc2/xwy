@@ -8,14 +8,21 @@
 
 import UIKit
 
-class TimerPickerViewController : UIViewController {
+class TimerPickerViewController : MyBaseViewController {
     
     @IBOutlet weak var OneMinute3010Button: UIButton!
     @IBOutlet weak var OneMinute3015Button: UIButton!
     @IBOutlet weak var TwoMinute3015Button: UIButton!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addSwiptExitOneLevel()
+    }
+    
     @IBAction func TypeTimerTouchDown(_ sender: Any) {
         self.performSegue(withIdentifier: "starttimer", sender: self)
     }
+    
+    
     
 }

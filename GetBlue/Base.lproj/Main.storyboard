@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -357,6 +357,7 @@
                     </view>
                     <connections>
                         <outlet property="CounterLabel" destination="RHO-eJ-7cs" id="bPv-EJ-eez"/>
+                        <outlet property="startButton" destination="mqS-9k-yWc" id="QQS-tA-mZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6x-fO-jee" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -437,9 +438,9 @@
                             <constraint firstItem="KSi-35-78h" firstAttribute="top" secondItem="lAd-uw-X2W" secondAttribute="bottom" constant="50" id="1nq-Su-viT"/>
                             <constraint firstItem="lAd-uw-X2W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="I1A-2A-i4D"/>
                             <constraint firstItem="J7e-X3-leJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="JUm-ld-2SM"/>
-                            <constraint firstItem="Nbf-Ff-fmC" firstAttribute="leading" secondItem="KSi-35-78h" secondAttribute="trailing" constant="114" id="TRX-Db-nF9"/>
                             <constraint firstItem="Nbf-Ff-fmC" firstAttribute="top" secondItem="J7e-X3-leJ" secondAttribute="bottom" constant="49" id="W4m-qL-Eil"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7e-X3-leJ" secondAttribute="trailing" constant="50" id="hgc-Zk-Vuh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nbf-Ff-fmC" secondAttribute="trailing" constant="50" id="npw-D4-uVI"/>
                             <constraint firstItem="lAd-uw-X2W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rtn-uX-Kxf"/>
                             <constraint firstItem="KSi-35-78h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="vwO-Zh-fdW"/>
                         </constraints>
@@ -448,6 +449,7 @@
                     <connections>
                         <outlet property="gameButton" destination="lAd-uw-X2W" id="k9h-jh-EX4"/>
                         <outlet property="readButton" destination="KSi-35-78h" id="O4z-7X-eRF"/>
+                        <outlet property="timerButton" destination="Nbf-Ff-fmC" id="Ti1-hq-HXk"/>
                         <outlet property="xesButton" destination="J7e-X3-leJ" id="SBS-yR-EZA"/>
                     </connections>
                 </viewController>
