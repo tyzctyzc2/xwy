@@ -12,12 +12,14 @@ class MainViewController: MyBaseViewController {
     @IBOutlet weak var xesButton: UIButton!
     @IBOutlet weak var gameButton: UIButton!
     @IBOutlet weak var readButton: UIButton!
-
+    @IBOutlet weak var timerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         super.beautyMyButton(button: xesButton)
         super.beautyMyButton(button: gameButton)
         super.beautyMyButton(button: readButton)
+        super.beautyMyButton(button: timerButton)
         //self.mainMessageLabel.numberOfLines = 0;
         // Do any additional setup after loading the view, typically from a nib.
     }
