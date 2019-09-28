@@ -59,6 +59,7 @@ class Game24ViewController : MyBaseViewController
         
         cacheArray.reserveCapacity(10)
         resetGame()
+        addSwiptExitOneLevel()
     }
     
     func resetGame() {

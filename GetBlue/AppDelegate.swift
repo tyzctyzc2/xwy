@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         playBackgroundMusic()
+        //UIApplication.shared.isIdleTimerDisabled = true
+        application.beginBackgroundTask {}
         return true
     }
     
@@ -28,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = URL(fileURLWithPath: path)
         do {
             bombSoundEffect = try AVAudioPlayer(contentsOf: url)
-            
+            bombSoundEffect?.numberOfLoops = -1
             bombSoundEffect?.play()
             
         } catch {

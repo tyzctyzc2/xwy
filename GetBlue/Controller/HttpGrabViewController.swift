@@ -118,6 +118,8 @@ class HttpGrabViewController : MyBaseViewController, UIGestureRecognizerDelegate
         doubleTap.addTarget(self, action: #selector(doubleTapped))
         view.isUserInteractionEnabled = true
         view.addGestureRecognizer(doubleTap)
+        
+        addSwiptExitOneLevel()
     }
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {

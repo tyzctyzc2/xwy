@@ -73,6 +73,7 @@ class ReadController : MyBaseViewController, WKNavigationDelegate, UIGestureReco
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addSwiptExitOneLevel()
     }
     
     @objc func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {

@@ -11,19 +11,22 @@ import AVFoundation
 import MediaPlayer
 
 class TimeCounterViewController : MyBaseViewController {
-    func setTotalSeconds(s: Int) {
-        totalSeconds = s
+    func setTotalMinutes(s: Int) {
+        totalMinutes = s
+        totalSeconds = s * 60
     }
     let synthesizer = AVSpeechSynthesizer()
     let audioSession = AVAudioSession.sharedInstance()
     
     @IBOutlet weak var CounterLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
-    
+    @IBOutlet weak var settingLabel: UILabel!
     var inCounterMode:Bool = false
     var counterTimer:Timer!
+    var refreshTimer:Timer!
     var secondLeft:Int!
-    var totalSeconds:Int!
+    var totalMinutes:Int! = 1
+    var totalSeconds:Int! = 60
     var speechSecond:[Int] = [Int]()
     @IBAction func StartStopTouchDown(_ sender: Any) {
         if inCounterMode == true {
@@ -36,17 +39,19 @@ class TimeCounterViewController : MyBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addSwiptExitOneLevel()
-        totalSeconds = 60
         
-        do {
-            try audioSession.setCategory(.ambient, mode: .default, options: [])
-        }catch let error as NSError {
-            print(error.code)
-        }
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        settingLabel.text = String(totalMinutes) + " Minutes"
+        UIScreen.main.brightness = CGFloat(0.2)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("counter view will disappear")
         stopTimer()
+        UIScreen.main.brightness = CGFloat(0.3)
     }
     
     func startTimer() {
@@ -57,6 +62,16 @@ class TimeCounterViewController : MyBaseViewController {
         iniSpeechSecond()
         secondLeft = totalSeconds
         counterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+        
+        /*DispatchQueue.global(qos: .default).async(execute: {
+            self.refreshTimer = Timer(timeInterval: 1, target: self, selector: #selector(self.doTimeRefresh), userInfo: nil, repeats: true)
+            RunLoop.main.add(self.refreshTimer!, forMode: RunLoop.Mode.common)
+        })*/
+    }
+    
+    @objc
+    func doTimeRefresh() {
+        NSLog("doTimeRefresh called")
     }
     
     func iniSpeechSecond() {
@@ -83,6 +98,13 @@ class TimeCounterViewController : MyBaseViewController {
     }
     
     func readText(text: String) {
+        do {
+            try audioSession.setCategory(.playback, mode: .default, options: [])
+            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+        }catch let error as NSError {
+            print(error.code)
+        }
+        
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "zh_CN")
         utterance.rate = 0.5
@@ -95,6 +117,7 @@ class TimeCounterViewController : MyBaseViewController {
     @objc
     func runTimedCode() {
         secondLeft = secondLeft - 1
+        NSLog("time changed..." + String(secondLeft))
         if secondLeft == 0 {
             CounterLabel.text = "End"
             readText(text: "请停止")

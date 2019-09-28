@@ -24,13 +24,13 @@ class MyBaseViewController : UIViewController
     }
     
     func addSwiptExitOneLevel() {
-        let right = UISwipeGestureRecognizer(target : self, action : #selector(swiptToExitOneLevelRight))
+        /*let right = UISwipeGestureRecognizer(target : self, action : #selector(swiptToExitOneLevelRight))
         right.direction = .right
         self.view.addGestureRecognizer(right)
         
         let left = UISwipeGestureRecognizer(target : self, action : #selector(swiptToExitOneLevelLeft))
         left.direction = .left
-        self.view.addGestureRecognizer(left)
+        self.view.addGestureRecognizer(left)*/
         
         let down = UISwipeGestureRecognizer(target : self, action : #selector(swiptToExitOneLevelDown))
         down.direction = .down
